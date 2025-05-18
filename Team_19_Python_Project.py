@@ -27,7 +27,8 @@ def loadshedding():
         times = stage //2                                                #the number of time loadshedding occurs is half of stage & rounded down.
         current_hour = 0
 
-        print (f"Stage {stage}: {hours_off}(s) & {times}(s).") 
+        print (f"Stage {stage}: {hours_off}(s) & {times}(s).")  
+        
         for t in range(times):
                 for h in range(hours_off):
                         if current_hour < 24:
@@ -86,10 +87,10 @@ def main():
         
         
         while True:
-                print("Please select an option: \n")
-                print("1. Record Activity")
-                print("2. View Schedule")
-                print("3. Exit")
+                print("Please select an option: ")
+                print(" 1. Record Activity")
+                print(" 2. View Schedule")
+                print(" 3. Exit")
 
                 choice = input("Enter your choice (1/2/3): ")
 
