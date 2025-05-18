@@ -27,7 +27,7 @@ def loadshedding():
         times = stage //2                                                #the number of time loadshedding occurs is half of stage & rounded down.
         current_hour = 0
 
-        print (f"Stage {stage}: {hours_off}(s) & {times}(s).")  
+        print (f"Stage {stage}: {hours_off} hour(s) & {times} time(s).")  
         
         for t in range(times):
                 for h in range(hours_off):
