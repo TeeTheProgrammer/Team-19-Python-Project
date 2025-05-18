@@ -40,10 +40,10 @@ def loadshedding():
 
 
 def record_activity():
-    activity_name = input("What would you like to call the activity? ")
+    activity_name = input("What would you like to call the activity?\n")
     try:
-        duration = int(input("What is the duration of the activity in hours? "))
-        start_time = int(input("What time will the activity begin? [0-23] "))
+        duration = int(input("What is the duration of the activity in hours?\n"))
+        start_time = int(input("What time will the activity begin? [0-23]\n"))
     except ValueError:
         print("Invalid input. Please enter numbers only.")
         return
