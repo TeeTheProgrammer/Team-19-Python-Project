@@ -24,9 +24,10 @@ def loadshedding():
                         print("Invalid stage. Must be an integer from 1 to 6.")
 
         hours_off = stage
-        times= stage //2                                                #the number of time loadshedding occurs is half of stage & rounded down.
+        times = stage //2                                                #the number of time loadshedding occurs is half of stage & rounded down.
         current_hour = 0
 
+        print (f"Stage {stage}: {hours_off}(s) & {times}(s).") 
         for t in range(times):
                 for h in range(hours_off):
                         if current_hour < 24:
